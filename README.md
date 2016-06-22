@@ -5,7 +5,7 @@
 ## Status
 Under development, not ready for prime-time just yet.
 
-[![Build Status](https://travis-ci.org/sandelius/skeletor?branch=master)](https://travis-ci.org/sandelius/skeletor)
+[![Build Status](https://travis-ci.org/sandelius/skeletor.svg?branch=master)](https://travis-ci.org/sandelius/skeletor)
 [![Test Coverage](https://codeclimate.com/github/sandelius/skeletor/badges/coverage.svg)](https://codeclimate.com/github/sandelius/skeletor/coverage)
 
 ## Installation
