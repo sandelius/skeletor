@@ -13,7 +13,7 @@ Under development, not ready for prime-time just yet.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'skeletor'
+gem "skeletor"
 ```
 
 And then execute:

@@ -14,5 +14,5 @@ branches:
   only:
     - master
 addons:
-    code_climate:
-        repo_token:
+  code_climate:
+    repo_token:
