@@ -1,9 +1,13 @@
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require "skeletor/version"
+
 Gem::Specification.new do |spec|
   spec.name    = "skeletor"
-  spec.version = File.read("lib/skeletor.rb")[/VERSION += +([\"])([\d][\w\.]+)\1/, 2]
-  spec.summary = "The Ruby web application framework."
+  spec.version = Skeletor::VERSION
+  spec.summary = "The Rubygems skeleton."
 
-  spec.required_ruby_version     = ">= 2.3.0"
+  spec.required_ruby_version     = ">= 2.4.0"
   spec.required_rubygems_version = ">= 2.5.0"
 
   spec.license = "MIT"
@@ -17,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler"
-  spec.add_development_dependency "minitest", ">= 5.7.0"
+  spec.add_development_dependency "minitest", ">= 5.10.0"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "rack-test"
