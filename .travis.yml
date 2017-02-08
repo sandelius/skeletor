@@ -2,6 +2,7 @@ language: ruby
 script: "bundle exec rake test:coverage --trace"
 rvm:
   - 2.4.0
+  - 2.3.0
   - ruby-head
   - jruby-9.1.7.0
   - jruby-head

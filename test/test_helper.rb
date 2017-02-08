@@ -8,11 +8,6 @@ if ENV["COVERAGE"] == "true"
   require "simplecov"
   require "codeclimate-test-reporter"
 
-  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
-    SimpleCov::Formatter::HTMLFormatter,
-    CodeClimate::TestReporter::Formatter
-  ])
-
   SimpleCov.start do
     command_name "test"
     add_filter   "test"
@@ -20,7 +15,6 @@ if ENV["COVERAGE"] == "true"
 end
 
 require "minitest/autorun"
-require "rack/test"
 
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
-require "skeletor"
+require "ramverk/skeletor"

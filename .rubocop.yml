@@ -1,0 +1,16 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - test/**/*
+    - ramverk.gemspec
+    - Rakefile
+    - Gemfile
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Lint/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Metrics/MethodLength:
+  Max: 15

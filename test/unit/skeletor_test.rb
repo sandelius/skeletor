@@ -2,8 +2,8 @@
 
 require "test_helper"
 
-describe Skeletor do
+describe Ramverk::Skeletor do
   it "has a version number" do
-    assert Skeletor::VERSION
+    assert Ramverk::Skeletor::VERSION
   end
 end
