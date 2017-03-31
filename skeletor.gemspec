@@ -2,12 +2,12 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "ramverk/skeletor/version"
+require "skeletor/version"
 
 Gem::Specification.new do |spec|
-  spec.name    = "ramverk-skeletor"
-  spec.version = Ramverk::Skeletor::VERSION
-  spec.summary = "The Ramverk skeleton gem."
+  spec.name    = "skeletor"
+  spec.version = Skeletor::VERSION
+  spec.summary = "The Ruby skeleton gem."
 
   spec.required_ruby_version     = ">= 2.3.0"
   spec.required_rubygems_version = ">= 2.5.0"
@@ -16,15 +16,14 @@ Gem::Specification.new do |spec|
 
   spec.author   = "Tobias Sandelius"
   spec.email    = "tobias@sandeli.us"
-  spec.homepage = "https://github.com/ramverk/skeletor"
+  spec.homepage = "https://github.com/sandelius/skeletor-rb"
 
   spec.files         = `git ls-files -z`.split("\x0")
-  spec.test_files    = spec.files.grep(%r{^(test)/})
+  spec.test_files    = spec.files.grep(%r{^(spec)/})
   spec.require_paths = ["lib"]
 
-  # Development
   spec.add_development_dependency "bundler"
-  spec.add_development_dependency "minitest", ">= 5.10.0"
+  spec.add_development_dependency "rspec", "~> 3.5"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "codeclimate-test-reporter"
