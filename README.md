@@ -1,6 +1,6 @@
-# Ramverk::Skeletor
+# Skeletor
 
-*This is not a real gem. I use tio create new ones*
+*This is not a real gem. I use it to create new ones*
 
 ## Status
 
