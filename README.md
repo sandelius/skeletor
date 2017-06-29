@@ -6,8 +6,8 @@
 
 Under development, not ready for prime-time just yet.
 
-[![Build Status](https://travis-ci.org/ramverk/skeletor.svg?branch=master)](https://travis-ci.org/ramverk/skeletor)
-[![Test Coverage](https://codeclimate.com/github/ramverk/skeletor/badges/coverage.svg)](https://codeclimate.com/github/ramverk/skeletor/coverage)
+[![Build Status](https://travis-ci.org/sandelius/skeletor.svg?branch=master)](https://travis-ci.org/sandelius/skeletor)
+[![Test Coverage](https://codeclimate.com/github/sandelius/skeletor/badges/coverage.svg)](https://codeclimate.com/github/sandelius/skeletor/coverage)
 
 
 ## Installation
@@ -15,7 +15,7 @@ Under development, not ready for prime-time just yet.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "ramverk-skeletor"
+gem "skeletor"
 ```
 
 And then execute:
@@ -24,12 +24,12 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ramverk-skeletor
+    $ gem install skeletor
 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/ramverk/skeletor. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/sandelius/skeletor. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
