@@ -1,16 +1,18 @@
 # frozen_string_literal: true
 
 require "bundler/gem_tasks"
-require "rspec/core/rake_task"
+require "rake/testtask"
 
-RSpec::Core::RakeTask.new(:spec)
+Rake::TestTask.new do |t|
+  t.pattern = "test/**/*_test.rb"
+  t.libs.push "test"
+end
 
-namespace :spec do
-  desc "Run spec with coverage enabled"
+namespace :test do
   task :coverage do
     ENV["COVERAGE"] = "true"
-    Rake::Task["spec"].invoke
+    Rake::Task["test"].invoke
   end
 end
 
-task default: :spec
+task default: :test

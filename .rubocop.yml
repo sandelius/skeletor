@@ -1,8 +1,8 @@
 AllCops:
   TargetRubyVersion: 2.4
   Exclude:
-    - spec/**/*
-    - *.gemspec
+    - test/**/*
+    - "*.gemspec"
     - Rakefile
     - Gemfile
 
