@@ -1,5 +1,11 @@
 language: ruby
 script: "bundle exec rake test:coverage"
+cache: bundler
+before_install:
+  - rvm @global do gem uninstall bundler -a -x
+  - rvm @global do gem install bundler -v 1.15.0
+after_script:
+  - "CODECLIMATE_REPO_TOKEN=<token> bundle exec codeclimate-test-reporter"
 rvm:
   - 2.4.1
   - 2.4.0
@@ -14,6 +20,3 @@ matrix:
 branches:
   only:
     - master
-addons:
-  code_climate:
-    repo_token:

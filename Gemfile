@@ -2,3 +2,6 @@
 
 source "https://rubygems.org"
 gemspec
+
+gem "simplecov"
+gem "codeclimate-test-reporter"
