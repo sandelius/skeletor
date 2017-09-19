@@ -7,8 +7,8 @@ if ENV["COVERAGE"] == "true"
   require "codeclimate-test-reporter"
 
   SimpleCov.start do
-    command_name "test"
-    add_filter   "test"
+    command_name "spec"
+    add_filter "spec"
   end
 end
 
