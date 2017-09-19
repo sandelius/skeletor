@@ -1,10 +1,6 @@
 AllCops:
   TargetRubyVersion: 2.4
-  Exclude:
-    - test/**/*
-    - "*.gemspec"
-    - Rakefile
-    - Gemfile
+  Exclude: []
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
@@ -14,3 +10,10 @@ Lint/EndAlignment:
 
 Metrics/MethodLength:
   Max: 15
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+
+ClassAndModuleChildren:
+  Enabled: false

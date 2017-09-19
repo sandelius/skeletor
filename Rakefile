@@ -3,16 +3,16 @@
 require "bundler/gem_tasks"
 require "rake/testtask"
 
-Rake::TestTask.new do |t|
-  t.pattern = "test/**/*_test.rb"
-  t.libs.push "test"
+Rake::TestTask.new(:spec) do |t|
+  t.pattern = "spec/**/*_spec.rb"
+  t.libs.push "spec"
 end
 
-namespace :test do
+namespace :spec do
   task :coverage do
     ENV["COVERAGE"] = "true"
-    Rake::Task["test"].invoke
+    Rake::Task["spec"].invoke
   end
 end
 
-task default: :test
+task default: :spec

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-ENV["RACK_ENV"] = "test"
-
 require "bundler/setup"
 
 if ENV["COVERAGE"] == "true"
@@ -15,10 +13,11 @@ if ENV["COVERAGE"] == "true"
 end
 
 require "minitest/autorun"
+require "minitest/pride"
 
-Dir["#{__dir__}/support/**/*.rb"].each { |f| require f }
+# Require support (helper) modules
+Dir["./spec/support/**/*.rb"].each { |f| require f }
 
-$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
 require "skeletor"
 
 class Minitest::Spec
