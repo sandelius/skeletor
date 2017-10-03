@@ -1,13 +1,11 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-
-describe Skeletor do
+RSpec.describe Skeletor do
   it "has a version file" do
-    assert_file_exist File.expand_path("../../lib/skeletor/version.rb", __dir__)
+    expect(File.expand_path("../../lib/skeletor/version.rb", __dir__)).to be_a_file
   end
 
   it "has a version number" do
-    assert_instance_of String, Skeletor::VERSION
+    expect(Skeletor::VERSION).to be_a(String)
   end
 end
