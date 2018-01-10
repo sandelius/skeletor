@@ -2,20 +2,19 @@ language: ruby
 script: "bundle exec rake spec:coverage"
 cache: bundler
 before_install:
-  - rvm @global do gem uninstall bundler -a -x
-  - rvm @global do gem install bundler -v 1.15.0
+  - "gem update --system"
 after_script:
   - "CODECLIMATE_REPO_TOKEN=<token> bundle exec codeclimate-test-reporter"
 rvm:
-  - 2.4.2
+  - 2.5.0
   - 2.4.0
   - ruby-head
-  - jruby-9.1.13.0
+  - jruby-9.1.15.0
   - jruby-head
 matrix:
   allow_failures:
     - rvm: jruby-head
-    - rvm: jruby-9.1.13.0
+    - rvm: jruby-9.1.15.0
     - rvm: ruby-head
 branches:
   only:
