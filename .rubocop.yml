@@ -1,7 +1,9 @@
 AllCops:
   TargetRubyVersion: 2.4
   DisplayCopNames: true
-  Exclude: []
+  Exclude:
+    - "*.gemspec"
+    - "Gemfile"
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
@@ -21,4 +23,7 @@ Metrics/ModuleLength:
     - "spec/**/*"
 
 ClassAndModuleChildren:
+  Enabled: false
+
+Layout/EmptyLineAfterGuardClause:
   Enabled: false
