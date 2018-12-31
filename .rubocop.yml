@@ -5,6 +5,9 @@ AllCops:
     - "*.gemspec"
     - "Gemfile"
 
+Performance:
+  Enabled: true
+
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 

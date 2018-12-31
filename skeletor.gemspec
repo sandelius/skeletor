@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-require File.expand_path("../lib/skeletor/version", __FILE__)
+require File.expand_path("lib/skeletor/version", __dir__)
 
 Gem::Specification.new do |spec|
   spec.name = "skeletor"
   spec.version = Skeletor::VERSION
   spec.summary = "The Ruby skeleton gem."
 
-  spec.required_ruby_version = ">= 2.4.0"
+  spec.required_ruby_version = ">= 2.5.0"
   spec.required_rubygems_version = ">= 2.5.0"
 
   spec.license = "MIT"
