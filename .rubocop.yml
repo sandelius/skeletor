@@ -11,8 +11,11 @@ Performance:
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
-Lint/EndAlignment:
+Layout/EndAlignment:
   EnforcedStyleAlignWith: variable
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
 
 Metrics/MethodLength:
   Max: 15
@@ -26,7 +29,4 @@ Metrics/ModuleLength:
     - "spec/**/*"
 
 ClassAndModuleChildren:
-  Enabled: false
-
-Layout/EmptyLineAfterGuardClause:
   Enabled: false
