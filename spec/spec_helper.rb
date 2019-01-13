@@ -4,7 +4,6 @@ require "bundler/setup"
 
 if ENV["COVERAGE"] == "true"
   require "simplecov"
-  require "codeclimate-test-reporter"
 
   SimpleCov.start do
     command_name "spec"
