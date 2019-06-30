@@ -1,5 +1,6 @@
+require: rubocop-performance
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.6
   DisplayCopNames: true
   Exclude:
     - "*.gemspec"
@@ -10,9 +11,6 @@ Performance:
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
-
-Layout/EndAlignment:
-  EnforcedStyleAlignWith: variable
 
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
@@ -30,3 +28,6 @@ Metrics/ModuleLength:
 
 ClassAndModuleChildren:
   Enabled: false
+
+Naming/UncommunicativeMethodParamName:
+  MinNameLength: 2

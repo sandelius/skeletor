@@ -14,7 +14,6 @@ after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 rvm:
   - 2.6.0
-  - 2.5.0
   - ruby-head
   - jruby
   - jruby-head
