@@ -1,26 +1,31 @@
-language: ruby
-script: "bundle exec rake spec:coverage"
-cache: bundler
-env:
-  global:
-    - CC_TEST_REPORTER_ID=<repo_token>
-before_install:
-  - "gem update --system"
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-rvm:
-  - 2.6.0
-  - ruby-head
-  - jruby
-  - jruby-head
-matrix:
-  allow_failures:
-    - rvm: jruby-head
-    - rvm: ruby-head
-branches:
-  only:
-    - master
+require: rubocop-performance
+AllCops:
+  TargetRubyVersion: 2.5
+  NewCops: enable
+  DisplayCopNames: true
+  Exclude:
+    - "*.gemspec"
+    - "Gemfile"
+
+Performance:
+  Enabled: true
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+
+Metrics/ModuleLength:
+  Exclude:
+    - "spec/**/*"

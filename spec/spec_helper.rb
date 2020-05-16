@@ -9,6 +9,11 @@ if ENV["COVERAGE"] == "true"
     command_name "spec"
     add_filter "spec"
   end
+
+  if ENV["CODECOV_TOKEN"]
+    require "codecov"
+    SimpleCov.formatter = SimpleCov::Formatter::Codecov
+  end
 end
 
 # Require support (helper) modules

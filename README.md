@@ -7,7 +7,7 @@
 Under development, not ready for prime-time just yet.
 
 [![Build Status](https://travis-ci.org/sandelius/skeletor.svg?branch=master)](https://travis-ci.org/sandelius/skeletor)
-[![Test Coverage](https://codeclimate.com/github/sandelius/skeletor/badges/coverage.svg)](https://codeclimate.com/github/sandelius/skeletor/coverage)
+[![codecov](https://codecov.io/gh/sandelius/skeletor/branch/master/graph/badge.svg)](https://codecov.io/gh/sandelius/skeletor)
 [![Inline docs](http://inch-ci.org/github/sandelius/skeletor.svg?branch=master)](http://inch-ci.org/github/sandelius/skeletor)
 
 ## Installation
