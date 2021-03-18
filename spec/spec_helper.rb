@@ -17,7 +17,7 @@ if ENV["COVERAGE"] == "true"
 end
 
 # Require support (helper) modules
-Dir["./spec/support/**/*.rb"].each { |f| require f }
+Dir["./spec/support/**/*.rb"].sort.each { |f| require f }
 
 require "skeletor"
 

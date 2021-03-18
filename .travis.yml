@@ -7,6 +7,7 @@ env:
 before_install:
   - "gem update --system"
 rvm:
+  - 3.0.0
   - 2.7.0
   - 2.6.0
   - 2.5.0
